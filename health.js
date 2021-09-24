@@ -24,7 +24,7 @@ function showNews(data) {
         // console.log(element["content"]);
         if(element["content"]!=null){
         news += ` <div class="card mx-4 my-3 shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
-        <img src="${element["urlToImage"]}" class="card-img-top" alt="Can't Load Image">
+        <img src="${element["urlToImage"]}" class="card-img-top" alt="">
         <div class="card-body">
           <h5 class="card-title">${element["title"]}</h5>
           <p class="card-text">${element["content"]}</p>

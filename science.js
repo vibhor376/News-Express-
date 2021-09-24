@@ -3,6 +3,7 @@
 let source = 'bbc-news';
 let country='in';
 let category='science'; 
+let imageCantLoad='https://uploads-us-west-2.insided.com/looker-en/attachment/d0a25f59-c9b7-40bd-b98e-de785bbd04e7.png';
 let newsPanel = document.getElementById('newsPanel');
 let url = "https://saurav.tech/NewsAPI/";
 url+=`/top-headlines/category/${category}/${country}.json`;
@@ -24,7 +25,7 @@ function showNews(data) {
         // console.log(element["content"]);
         if(element["content"]!=null){
         news += ` <div class="card mx-4 my-3 shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
-        <img src="${element["urlToImage"]}" class="card-img-top" alt="Can't Load Image">
+        <img src="${element["urlToImage"]}" class="card-img-top" alt="">
         <div class="card-body">
           <h5 class="card-title">${element["title"]}</h5>
           <p class="card-text">${element["content"]}</p>
