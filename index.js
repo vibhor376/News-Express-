@@ -22,7 +22,7 @@ function showNews(data) {
     articles.forEach(function(element,index) {
         // console.log(element["content"]);
         if(element["content"]!=null){
-        news += ` <div class="card mx-4 my-3" style="width: 18rem;">
+        news += ` <div class="card mx-4 my-3 shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
         <img src="${element["urlToImage"]}" class="card-img-top" alt="Can't Load Image">
         <div class="card-body">
           <h5 class="card-title">${element["title"]}</h5>
